@@ -61,36 +61,6 @@ class GetAction(Action):
         return []
 
 
-class AdobeReader(Action):
-    def name(self) -> Text:
-        return "action_adobe_incidents"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        with open(os.path.dirname(os.path.abspath(__file__))+'\\InputJSON\\AdobeReaderExplorer.json', 'r') as myfile:
-            data = myfile.read()
-            email_value = tracker.get_slot("username")
-            print("EmailID++++++++++++++" + email_value)
-            sent_json = data.replace("EMAILID", email_value)
-            print(sent_json)
-            datavalue = urllib.parse.quote(sent_json)
-            url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
-            headers = {"Content-Type": "application/json"}
-            print("AdobeReader")
-            req = requests.post(url, headers=headers, verify=False, timeout=180)
-            result = req.json().get('response_status')
-            if result['status_code'] == 2000:
-                getid = req.json().get('request')
-                ticketid = getid['id']
-                print("Ticket Created Successfully and ticket No-"+ticketid)
-                dispatcher.utter_message(text="Ticket Created Successfully and ticket No-"+ticketid)
-            else:
-                print("Not created")
-                dispatcher.utter_message(text="There was some problem while creating the ticket. Please try after some time..")
-            return []
-
-
 class ArchiveFile(Action):
     def name(self) -> Text:
         return "action_archive_incidents"
@@ -121,23 +91,23 @@ class ArchiveFile(Action):
             return []
 
 
-class CleanTemp(Action):
+class RecoverEmail(Action):
     def name(self) -> Text:
-        return "action_cleantemp_incidents"
+        return "action_recoveremail_incidents"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        with open(os.path.dirname(os.path.abspath(__file__))+'\\InputJSON\\CleanTempMobility.json', 'r') as myfile:
+        with open(os.path.dirname(os.path.abspath(__file__)) + '\\InputJSON\\RecoverEmail.json', 'r') as myfile:
             data = myfile.read()
             email_value = tracker.get_slot("username")
             print("EmailID++++++++++++++" + email_value)
             sent_json = data.replace("EMAILID", email_value)
             print(sent_json)
             datavalue = urllib.parse.quote(sent_json)
-            url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
+            url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data=" + datavalue
             headers = {"Content-Type": "application/json"}
-            print("CleanTemp")
+            print("RecoverEmail")
             req = requests.post(url, headers=headers, verify=False, timeout=180)
             result = req.json().get('response_status')
             if result['status_code'] == 2000:
@@ -150,6 +120,35 @@ class CleanTemp(Action):
                 dispatcher.utter_message(text="Please try after some time for ticket creation")
             return []
 
+
+class PrinterIssue(Action):
+    def name(self) -> Text:
+        return "action_printer_incidents"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        with open(os.path.dirname(os.path.abspath(__file__))+'\\InputJSON\\Printerissue.json', 'r') as myfile:
+            data = myfile.read()
+            email_value = tracker.get_slot("username")
+            print("EmailID++++++++++++++" + email_value)
+            sent_json = data.replace("EMAILID", email_value)
+            print(sent_json)
+            datavalue = urllib.parse.quote(sent_json)
+            url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
+            headers = {"Content-Type": "application/json"}
+            print("PrinterIssue")
+            req = requests.post(url, headers=headers, verify=False, timeout=180)
+            result = req.json().get('response_status')
+            if result['status_code'] == 2000:
+                getid = req.json().get('request')
+                ticketid = getid['id']
+                print("Ticket Created Successfully and ticket No-" + ticketid)
+                dispatcher.utter_message(text="Ticket Created Successfully and ticket No-" + ticketid)
+            else:
+                print("Not created")
+                dispatcher.utter_message(text="Please try after some time for ticket creation")
+            return []
 
 class CleanUpExplorer(Action):
     def name(self) -> Text:
@@ -211,14 +210,14 @@ class Popup(Action):
             return []
 
 
-class RecoverEmail(Action):
+class AdobeReader(Action):
     def name(self) -> Text:
-        return "action_recoveremail_incidents"
+        return "action_adobe_incidents"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        with open(os.path.dirname(os.path.abspath(__file__))+'\\InputJSON\\RecoverEmail.json', 'r') as myfile:
+        with open(os.path.dirname(os.path.abspath(__file__))+'\\InputJSON\\AdobeReaderExplorer.json', 'r') as myfile:
             data = myfile.read()
             email_value = tracker.get_slot("username")
             print("EmailID++++++++++++++" + email_value)
@@ -227,7 +226,37 @@ class RecoverEmail(Action):
             datavalue = urllib.parse.quote(sent_json)
             url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
             headers = {"Content-Type": "application/json"}
-            print("RecoverEmail")
+            print("AdobeReader")
+            req = requests.post(url, headers=headers, verify=False, timeout=180)
+            result = req.json().get('response_status')
+            if result['status_code'] == 2000:
+                getid = req.json().get('request')
+                ticketid = getid['id']
+                print("Ticket Created Successfully and ticket No-"+ticketid)
+                dispatcher.utter_message(text="Ticket Created Successfully and ticket No-"+ticketid)
+            else:
+                print("Not created")
+                dispatcher.utter_message(text="There was some problem while creating the ticket. Please try after some time..")
+            return []
+
+
+class CleanTemp(Action):
+    def name(self) -> Text:
+        return "action_cleantemp_incidents"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        with open(os.path.dirname(os.path.abspath(__file__))+'\\InputJSON\\CleanTempMobility.json', 'r') as myfile:
+            data = myfile.read()
+            email_value = tracker.get_slot("username")
+            print("EmailID++++++++++++++" + email_value)
+            sent_json = data.replace("EMAILID", email_value)
+            print(sent_json)
+            datavalue = urllib.parse.quote(sent_json)
+            url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
+            headers = {"Content-Type": "application/json"}
+            print("CleanTemp")
             req = requests.post(url, headers=headers, verify=False, timeout=180)
             result = req.json().get('response_status')
             if result['status_code'] == 2000:
@@ -241,14 +270,14 @@ class RecoverEmail(Action):
             return []
 
 
-class PrinterIssue(Action):
+class CDriveSpace(Action):
     def name(self) -> Text:
-        return "action_printer_incidents"
+        return "action_cdrivespace_incidents"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        with open(os.path.dirname(os.path.abspath(__file__))+'\\InputJSON\\Printerissue.json', 'r') as myfile:
+        with open(os.path.dirname(os.path.abspath(__file__))+'\\InputJSON\\DriveSpace.json', 'r') as myfile:
             data = myfile.read()
             email_value = tracker.get_slot("username")
             print("EmailID++++++++++++++" + email_value)
@@ -257,7 +286,37 @@ class PrinterIssue(Action):
             datavalue = urllib.parse.quote(sent_json)
             url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
             headers = {"Content-Type": "application/json"}
-            print("PrinterIssue")
+            print("C Drive Space")
+            req = requests.post(url, headers=headers, verify=False, timeout=180)
+            result = req.json().get('response_status')
+            if result['status_code'] == 2000:
+                getid = req.json().get('request')
+                ticketid = getid['id']
+                print("Ticket Created Successfully and ticket No-" + ticketid)
+                dispatcher.utter_message(text="Ticket Created Successfully and ticket No-" + ticketid)
+            else:
+                print("Not created")
+                dispatcher.utter_message(text="Please try after some time for ticket creation")
+            return []
+
+
+class JavaSolution(Action):
+    def name(self) -> Text:
+        return "action_javasolution_incidents"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        with open(os.path.dirname(os.path.abspath(__file__))+'\\InputJSON\\JavaSolution.json', 'r') as myfile:
+            data = myfile.read()
+            email_value = tracker.get_slot("username")
+            print("EmailID++++++++++++++" + email_value)
+            sent_json = data.replace("EMAILID", email_value)
+            print(sent_json)
+            datavalue = urllib.parse.quote(sent_json)
+            url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
+            headers = {"Content-Type": "application/json"}
+            print("Solution for Java")
             req = requests.post(url, headers=headers, verify=False, timeout=180)
             result = req.json().get('response_status')
             if result['status_code'] == 2000:

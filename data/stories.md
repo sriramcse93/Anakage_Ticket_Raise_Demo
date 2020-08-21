@@ -44,8 +44,6 @@
 ## System issue
 * system
   - utter_system
-* Temp_file_C
-  - utter_Temp_file_C
 * low_memory
   - utter_low_memory
 * adobe_issue
@@ -72,6 +70,10 @@
 ## mobility
 * mobility
   - utter_mobility
+* Temp_file_C
+  - utter_Temp_file_C
+* java_solution
+  - utter_java_solution
 
 ## List of all category
 * main_category
@@ -105,31 +107,40 @@
 * ticket_raise
   - utter_ticket_raise
   
-## post_adobe
-* not_satisfied_internet_explorer_PDF
-  - action_adobe_incidents
 
 ## post_archive
 * not_satisfied_outlook_newfile
   - action_archive_incidents
   
+## post_recovermail
+* not_satisfied_outlook_recovery
+  - action_recoveremail_incidents
+ 
+## post_adobe
+* not_satisfied_internet_explorer_PDF
+  - action_adobe_incidents
+   
+## post_printer
+* not_satisfied_printer_queue
+  - action_printer_incidents
+  
 ## post_cleantemp
 * not_satisfied_internet_explorer_clean
-  - action_cleantemp_incidents
-  
-## post_cleanupexplorer
-* not_satisfied_mobility
   - action_cleanup_incidents
   
 ## post_popupexplorer
 * not_satisfied_internet_explorer_popup
   - action_popup_incidents
   
-## post_recovermail
-* not_satisfied_outlook_recovery
-  - action_recoveremail_incidents
+## post_cleanupexplorer
+* not_satisfied_mobility
+  - action_cleantemp_incidents
   
-## post_printer
-* not_satisfied_printer_queue
-  - action_printer_incidents
+## post_cdriveclean
+* not_satisfied_Temp_file_C
+  - action_cdrivespace_incidents
+  
+## post_javasolution
+* not_satisfied_java_solution
+  - action_javasolution_incidents
   

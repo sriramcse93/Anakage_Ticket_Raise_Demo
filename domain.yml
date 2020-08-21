@@ -20,6 +20,7 @@ intents:
 - internet_explorer_popup
 - internet_explorer_clean
 - mobility
+- java_solution
 - outlook_issue
 - printer_queue
 - printer_spooler
@@ -62,6 +63,7 @@ intents:
 - not_satisfied_internet_explorer_popup
 - not_satisfied_internet_explorer_clean
 - not_satisfied_mobility
+- not_satisfied_java_solution
 - all_category
 slots:
   username:
@@ -106,27 +108,23 @@ responses:
   utter_outlook_newfile:
   - text: Please click the below link to solve create new PST archive file issue
     custom:
-      link: http://universal-dev.anakage.co.in/uploads/solutions/techselfsupport15.exe
+      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport15.exe
   utter_outlook_recovery:
   - text: Please click the below link to recover deleted email issue
     custom:
-      link: http://universal-dev.anakage.co.in/uploads/solutions/techselfsupport67.exe
+      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport67.exe
   utter_printer_issue:
   - text: what type of issue facing in printer
   utter_printer_queue:
   - text: Please click the below link to solve the printer queue issue
     custom:
-      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport131.exe
   utter_printer_spooler:
   - text: Please click the below link to solve the printer spooler issue
     custom:
       link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
   utter_default:
   - text: Sorry I didn't understand..
-  utter_Temp_file_C:
-  - text: Please click the below link to delete the temp file issue
-    custom:
-      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
   utter_system:
   - text: what type of issue facing in system
   utter_low_memory:
@@ -160,19 +158,27 @@ responses:
   utter_internet_explorer_PDF:
   - text: Please click the below link to enable the PDF reader in the browser
     custom:
-      link: http://universal-dev.anakage.co.in/uploads/solutions/techselfsupport28.exe
+      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport28.exe
   utter_internet_explorer_popup:
   - text: Please click the below link to enable the Pop-Ups in internet explorer
     custom:
-      link: http://universal-dev.anakage.co.in/uploads/solutions/techselfsupport207.exe
+      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport207.exe
   utter_internet_explorer_clean:
   - text: Please click the below link to clean up the internet explorer
     custom:
-      link: http://universal-dev.anakage.co.in/uploads/solutions/techselfsupport213.exe
+      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport213.exe
   utter_mobility:
   - text: Please click the below link to clear the temp files
     custom:
-      link: http://universal-dev.anakage.co.in/uploads/solutions/techselfsupport205.exe
+      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport205.exe
+  utter_Temp_file_C:
+  - text: Please click the below link to Free Up C Drive Space Issue
+    custom:
+      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport693.exe
+  utter_java_solution:
+    - text: Please click the below link for solution to java Issue
+      custom:
+        link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport22.exe
   utter_outlook_category:
   - text: Please choose from the below issue
     custom:
@@ -203,8 +209,6 @@ responses:
   - text: Please choose from the below issue
     custom:
       dropdowns:
-      - title: Clean Temporary Files from C Drive
-        payload: /Temp_file_C
       - title: Running out of memory in computer
         payload: /low_memory
       - title: Access denied in Adobe Reader
@@ -237,6 +241,10 @@ responses:
       dropdowns:
       - title: To clear the user temp files
         payload: /mobility
+      - title: Clean Temporary Files from C Drive
+        payload: /Temp_file_C
+      - title: Getting error in java installation
+        payload: /java_solution
   utter_all_category:
   - text: Please select the issue.
     buttons:
@@ -293,6 +301,7 @@ actions:
 - utter_internet_explorer_popup
 - utter_internet_explorer_clean
 - utter_mobility
+- utter_java_solution
 - utter_outlook_category
 - utter_printer_category
 - utter_system_category
@@ -310,3 +319,5 @@ actions:
 - action_popup_incidents
 - action_recoveremail_incidents
 - action_printer_incidents
+- action_cdrivespace_incidents
+- action_javasolution_incidents

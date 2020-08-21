@@ -133,13 +133,6 @@
 - System getting problem
 - Facing issue in system
 
-## intent:Temp_file_C
-- Clean Temporary Files from C drive
-- Delete Temporary file from C drive
-- From C drive delete all temporary file
-- Need to delete temp files
-- Remove all temp file
-
 ## intent: low_memory
 - Computer is low Memory
 - Running out of memory in computer
@@ -195,6 +188,18 @@
 - To clear the temp files from system
 - To clear the user temp files
 - Delete the user temp files
+
+## intent:Temp_file_C
+- Clean Temporary Files from C drive
+- Delete Temporary file from C drive
+- From C drive delete all temporary file
+- Need to delete temp files
+- Remove all temp file
+
+## intent:java_solution
+- Getting error in java installation
+- How to solve the java installation failure
+- Steps to solve the java issue
 
 ## intent: outlook_category
 - error in outlook category
@@ -282,8 +287,11 @@
 - printer spooler solution is not working.
 
 ## intent: not_satisfied_Temp_file_C
-- not satisfied temp file c
+- not satisfied Temp File C
 - temp file delete solution not satisfied
+- to free up C drive solution not satisfied
+- delete the C drive temp file issue not solved
+- to remove the C drive temp file solution not satisfied
 
 ## intent: not_satisfied_low_memory
 - not satisfied low memory
@@ -340,3 +348,11 @@
 - user temp files solution not satisfied
 - not satisfied for solution to remove user temp file
 - to remove the user temp file solution not satisfied
+- not satisfied for user temp file remove not solved
+
+## intent: not_satisfied_java_solution
+- not satisfied java solution
+- java installation problem not solved
+- java installation error not solved
+- installation of java error not solved
+- java problem not solved
