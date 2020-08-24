@@ -16,64 +16,64 @@
   - utter_all_category
   
 ## outlook closed
-* outlook_issue
-  - utter_outlook_issue
-* outlook_closed
-  - utter_outlook_closed
-* outlook_xml_error
-  - utter_outlook_xml_error
-* outlook_word
-  - utter_outlook_word
-* outlook_excel
-  - utter_outlook_excel
-* outlook_powerpoint
-  - utter_outlook_powerpoint
-* outlook_newfile
-  - utter_outlook_newfile
-* outlook_recovery
-  - utter_outlook_recovery
+##* outlook_issue
+##  - utter_outlook_issue
+##* outlook_closed
+##  - utter_outlook_closed
+##* outlook_xml_error
+##  - utter_outlook_xml_error
+##* outlook_word
+##  - utter_outlook_word
+##* outlook_excel
+##  - utter_outlook_excel
+##* outlook_powerpoint
+##  - utter_outlook_powerpoint
+##* outlook_newfile
+##  - utter_outlook_newfile
+##* outlook_recovery
+##  - utter_outlook_recovery
   
 ## printer queue
-* printer_issue
-  - utter_printer_issue
-* printer_queue
-  - utter_printer_queue
-* printer_spooler
-  - utter_printer_spooler
+## * printer_issue
+##  - utter_printer_issue
+## * printer_queue
+##  - utter_printer_queue
+## * printer_spooler
+##  - utter_printer_spooler
   
 ## System issue
-* system
-  - utter_system
-* low_memory
-  - utter_low_memory
-* adobe_issue
-  - utter_adobe_issue
-* system_slow
-  - utter_system_slow
-* account_locked
-  - utter_account_locked
-* critix_issue
-  - utter_critix_issue
-* browser_issue
-  - utter_browser_issue
-* internet_explorer
-  - utter_internet_explorer
+##* system
+##  - utter_system
+##* low_memory
+##  - utter_low_memory
+##* adobe_issue
+##  - utter_adobe_issue
+##* system_slow
+##  - utter_system_slow
+##* account_locked
+##  - utter_account_locked
+##* critix_issue
+##  - utter_critix_issue
+##* browser_issue
+##  - utter_browser_issue
+##* internet_explorer
+##  - utter_internet_explorer
   
 ## internet explorer
-* internet_explorer_PDF
-  - utter_internet_explorer_PDF
-* internet_explorer_popup
-  - utter_internet_explorer_popup
-* internet_explorer_clean
-  - utter_internet_explorer_clean
+##* internet_explorer_PDF
+##  - utter_internet_explorer_PDF
+##* internet_explorer_popup
+##  - utter_internet_explorer_popup
+##* internet_explorer_clean
+##  - utter_internet_explorer_clean
   
 ## mobility
-* mobility
-  - utter_mobility
-* Temp_file_C
-  - utter_Temp_file_C
-* java_solution
-  - utter_java_solution
+##* mobility
+##  - utter_mobility
+##* Temp_file_C
+##  - utter_Temp_file_C
+##* java_solution
+##  - utter_java_solution
 
 ## List of all category
 * main_category
@@ -103,44 +103,39 @@
 * mobility_category
   - utter_mobility_category
 
-## ticket_raise
-* ticket_raise
-  - utter_ticket_raise
-  
-
 ## post_archive
-* not_satisfied_outlook_newfile
+* create_ticket_for_outlook_newfile
   - action_archive_incidents
   
 ## post_recovermail
-* not_satisfied_outlook_recovery
+* create_ticket_for_outlook_recovery
   - action_recoveremail_incidents
  
 ## post_adobe
-* not_satisfied_internet_explorer_PDF
+* create_ticket_for_internet_explorer_PDF
   - action_adobe_incidents
    
 ## post_printer
-* not_satisfied_printer_queue
+* create_ticket_for_printer_queue
   - action_printer_incidents
   
 ## post_cleantemp
-* not_satisfied_internet_explorer_clean
+* create_ticket_for_internet_explorer_clean
   - action_cleanup_incidents
   
 ## post_popupexplorer
-* not_satisfied_internet_explorer_popup
+* create_ticket_for_internet_explorer_popup
   - action_popup_incidents
   
 ## post_cleanupexplorer
-* not_satisfied_mobility
+* create_ticket_for_mobility
   - action_cleantemp_incidents
   
 ## post_cdriveclean
-* not_satisfied_Temp_file_C
+* create_ticket_for_Temp_file_C
   - action_cdrivespace_incidents
   
 ## post_javasolution
-* not_satisfied_java_solution
+* create_ticket_for_java_solution
   - action_javasolution_incidents
   

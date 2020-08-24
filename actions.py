@@ -77,7 +77,7 @@ class ArchiveFile(Action):
             datavalue = urllib.parse.quote(sent_json)
             url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
             headers = {"Content-Type": "application/json"}
-            print("ArchiveFile")
+            print("create_ticket_for_outlook_newfile")
             req = requests.post(url, headers=headers, verify=False, timeout=180)
             result = req.json().get('response_status')
             if result['status_code'] == 2000:
@@ -107,7 +107,7 @@ class RecoverEmail(Action):
             datavalue = urllib.parse.quote(sent_json)
             url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data=" + datavalue
             headers = {"Content-Type": "application/json"}
-            print("RecoverEmail")
+            print("create_ticket_for_outlook_recovery")
             req = requests.post(url, headers=headers, verify=False, timeout=180)
             result = req.json().get('response_status')
             if result['status_code'] == 2000:
@@ -137,7 +137,7 @@ class PrinterIssue(Action):
             datavalue = urllib.parse.quote(sent_json)
             url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
             headers = {"Content-Type": "application/json"}
-            print("PrinterIssue")
+            print("create_ticket_for_printer_queue")
             req = requests.post(url, headers=headers, verify=False, timeout=180)
             result = req.json().get('response_status')
             if result['status_code'] == 2000:
@@ -166,7 +166,7 @@ class CleanUpExplorer(Action):
             datavalue = urllib.parse.quote(sent_json)
             url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
             headers = {"Content-Type": "application/json"}
-            print("CleanUp")
+            print("create_ticket_for_internet_explorer_clean")
             req = requests.post(url, headers=headers, verify=False, timeout=180)
             result = req.json().get('response_status')
             if result['status_code'] == 2000:
@@ -196,7 +196,7 @@ class Popup(Action):
             datavalue = urllib.parse.quote(sent_json)
             url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
             headers = {"Content-Type": "application/json"}
-            print("PopUpExplorer")
+            print("create_ticket_for_internet_explorer_popup")
             req = requests.post(url, headers=headers, verify=False, timeout=180)
             result = req.json().get('response_status')
             if result['status_code'] == 2000:
@@ -226,7 +226,7 @@ class AdobeReader(Action):
             datavalue = urllib.parse.quote(sent_json)
             url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
             headers = {"Content-Type": "application/json"}
-            print("AdobeReader")
+            print("create_ticket_for_internet_explorer_PDF")
             req = requests.post(url, headers=headers, verify=False, timeout=180)
             result = req.json().get('response_status')
             if result['status_code'] == 2000:
@@ -256,7 +256,7 @@ class CleanTemp(Action):
             datavalue = urllib.parse.quote(sent_json)
             url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
             headers = {"Content-Type": "application/json"}
-            print("CleanTemp")
+            print("create_ticket_for_mobility")
             req = requests.post(url, headers=headers, verify=False, timeout=180)
             result = req.json().get('response_status')
             if result['status_code'] == 2000:
@@ -286,7 +286,7 @@ class CDriveSpace(Action):
             datavalue = urllib.parse.quote(sent_json)
             url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
             headers = {"Content-Type": "application/json"}
-            print("C Drive Space")
+            print("create_ticket_for_Temp_file_C")
             req = requests.post(url, headers=headers, verify=False, timeout=180)
             result = req.json().get('response_status')
             if result['status_code'] == 2000:
@@ -316,7 +316,7 @@ class JavaSolution(Action):
             datavalue = urllib.parse.quote(sent_json)
             url = "https://coe.servicedesk.inspirisys.org:8090/api/v3/requests?TECHNICIAN_KEY=B21C907A-C903-465E-8A8A-BB8C4D63D549&input_data="+datavalue
             headers = {"Content-Type": "application/json"}
-            print("Solution for Java")
+            print("create_ticket_for_java_solution")
             req = requests.post(url, headers=headers, verify=False, timeout=180)
             result = req.json().get('response_status')
             if result['status_code'] == 2000:

@@ -64,10 +64,6 @@
 - am I talking to a bot?
 - am I talking to a human?
 
-## intent:outlook_issue
-- Facing issue in outlook
-- I am facing issue in outlook
-
 ## intent:outlook_closed
 - Outlook closed when minimized
 - When minimized the outlook it closed
@@ -111,16 +107,13 @@
 - steps to recover deleted email from email server
 - Recover deleted E-mail from mail server
 
-## intent:printer_issue
-- Facing issue in printer
-- Facing error in printer
-
 ## intent:printer_queue
 - Print jobs stuck in print Queue
 - Jobs stuck in printer queue
 - Print jobs stuck in printer
 - Jobs stuck in printer
 - printer is not working as jobs are stuck in queue
+- Printer is not working due to jobs are stuck in queue
 
 ## intent:printer_spooler
 - Getting error Printer Spooler Service is not working
@@ -128,10 +121,6 @@
 - printer is not working due to spooler error
 - printer spooler service is not working
 - getting error in printer spooler
-
-## intent:system
-- System getting problem
-- Facing issue in system
 
 ## intent: low_memory
 - Computer is low Memory
@@ -200,6 +189,7 @@
 - Getting error in java installation
 - How to solve the java installation failure
 - Steps to solve the java issue
+- Facing issue on the java execute
 
 ## intent: outlook_category
 - error in outlook category
@@ -210,6 +200,7 @@
 - list out the printer category
 - printer category list
 - category of printer list
+- list out the problem of printer category
 
 ## intent: system_category
 - list out the system category
@@ -236,123 +227,118 @@
 - Category to solve the issue using anakage
 - Types of category to solve the issue
 
-## intent: ticket_raise
-- Please raise the ticket.
-- raise the ticket.
-- raise the ticket to solve the issue
-
-## intent: not_satisfied_outlook_closed
-- not satisfied outlook closed
+## intent: create_ticket_for_outlook_closed
+- create ticket for outlook closed
 - not satisfied with outlook closed error
 
-## intent: not_satisfied_outlook_xml_error
-- not satisfied outlook xml error
+## intent: create_ticket_for_outlook_xml_error
+- create ticket for outlook xml error
 - facing xml error in outlook frequently
 
-## intent: not_satisfied_outlook_word
-- not satisfied outlook word
+## intent: create_ticket_for_outlook_word
+- create ticket for outlook word
 - how to resolve the outlook word error
 
-## intent: not_satisfied_outlook_excel
-- not satisfied outlook excel
+## intent: create_ticket_for_outlook_excel
+- create ticket for outlook excel
 - outlook excel error not resolve
 
-## intent: not_satisfied_outlook_powerpoint
-- not satisfied outlook powerpoint
+## intent: create_ticket_for_outlook_powerpoint
+- create ticket for outlook powerpoint
 - outlook powerpoint solution not solve the problem.
 
-## intent: not_satisfied_outlook_newfile
-- not satisfied outlook newfile
+## intent: create_ticket_for_outlook_newfile
+- create ticket for outlook newfile
 - not able to create the PST file
 - PST file creation solution not satisfied in outlook.
-- archive file problem not solved.
+- archive file problem not solved so need to create ticket.
 - solution for archive file not resolved
 - not satisfied the solution to create the Archive new file
 
-## intent: not_satisfied_outlook_recovery
-- not satisfied outlook recovery
+## intent: create_ticket_for_outlook_recovery
+- create ticket for outlook recovery
 - outlook recovery problem not resolved.
 - deleted mail from outlook recovery solution not resolved.
-- mail recovery solution not satisfied
+- mail recovery solution not satisfied so need to create ticket
 
-## intent: not_satisfied_printer_queue
-- not satisfied printer queue
-- printer queue solution not satisfied
+## intent: create_ticket_for_printer_queue
+- create ticket for printer queue
+- printer queue solution not resolved so need to create ticket
 - printer job stuck to solve the solution not satisfied
-- need to create the incident for printer queue problem
-- solution for printer job not satisfied
+- need to create the ticket for printer queue problem
+- solution for printer job not satisfied so need to create ticket
 
-## intent: not_satisfied_printer_spooler
-- not satisfied printer spooler
+## intent: create_ticket_for_printer_spooler
+- create ticket for printer spooler
 - printer spooler solution is not working.
 
-## intent: not_satisfied_Temp_file_C
-- not satisfied Temp File C
-- temp file delete solution not satisfied
-- to free up C drive solution not satisfied
-- delete the C drive temp file issue not solved
+## intent: create_ticket_for_Temp_file_C
+- create ticket for Temp file C
+- temp file delete solution not satisfied so need to create ticket
+- create ticket to solve the C drive free up
+- delete the C drive temp file issue not solved so need to create ticket
 - to remove the C drive temp file solution not satisfied
 
-## intent: not_satisfied_low_memory
-- not satisfied low memory
-- out of memory solution not solved
+## intent: create_ticket_for_low_memory
+- create ticket for low memory
+- out of memory solution not solved so need to create ticket
 
-## intent: not_satisfied_adobe_issue
-- not satisfied adobe issue
-- access denied solution not solved
+## intent: create_ticket_for_adobe_issue
+- create ticket for adobe issue
+- access denied solution not solved so need to create ticket
 
-## intent: not_satisfied_system_slow
-- not satisfied system slow
-- machine get slow issue not solved
+## intent: create_ticket_for_system_slow
+- create ticket for system slow
+- machine get slow issue not solved so need to create ticket
 
-## intent: not_satisfied_account_locked
-- not satisfied account locked
-- solution for account locked not satisfied
+## intent: create_ticket_for_account_locked
+- create ticket for account locked
+- solution for account locked not satisfied so need to create ticket
 
-## intent: not_satisfied_critix_issue
-- not satisfied critix issue
-- not able to solve critix issue
+## intent: create_ticket_for_critix_issue
+- create ticket for critix issue
+- not able to solve critix issue so need to create ticket
 
-## intent: not_satisfied_browser_issue
-- not satisfied browser issue
-- solution for browser issue not satisfied
+## intent: create_ticket_for_browser_issue
+- create ticket for browser issue
+- solution for browser issue not satisfied so need to create ticket
 
-## intent: not_satisfied_internet_explorer
-- not satisfied internet explorer
-- not satisfied to set internet explorer as default
+## intent: create_ticket_for_internet_explorer
+- create ticket for internet explorer
+- not satisfied to set internet explorer as default so need to create ticket
 
-## intent: not_satisfied_internet_explorer_PDF
-- not satisfied internet explorer PDF
-- open PDF in browser not solved
+## intent: create_ticket_for_internet_explorer_PDF
+- create ticket for internet explorer PDF
+- open PDF in browser not solved so need to create ticket
 - solution for internet explorer open PDF in browser not solved
 - open PDF file in internet explorer not solved.
 
-## intent: not_satisfied_internet_explorer_popup
-- not satisfied internet explorer popup
-- popup notification in internet explorer not solved
+## intent: create_ticket_for_internet_explorer_popup
+- create ticket for internet explorer popup
+- popup notification in internet explorer not solved so need to create ticket
 - internet explorer popup notification solution not satisfied
 - popup notification in internet explorer solution not solved
 - notification in internet explorer problem not solved
 
-## intent: not_satisfied_internet_explorer_clean
-- not satisfied internet explorer clean
-- internet explorer clean up not solved
+## intent: create_ticket_for_internet_explorer_clean
+- create ticket for internet explorer clean
+- internet explorer clean up not solved so need to create ticket
 - clean up history in internet explorer not resolved
 - browser history in internet explorer solution not satisfied
 - clean the internet explorer solution not resolved
 - internet explorer clean up history solution not satisfied
 
-## intent: not_satisfied_mobility
-- not satisfied mobility
-- mobility problem for remove the temp file solution not satisfied
-- user temp files solution not satisfied
+## intent: create_ticket_for_mobility
+- create ticket for mobility
+- temp file remove problem not resolved so need to create ticket
+- user temp files solution not satisfied so need to create ticket
 - not satisfied for solution to remove user temp file
 - to remove the user temp file solution not satisfied
 - not satisfied for user temp file remove not solved
 
-## intent: not_satisfied_java_solution
-- not satisfied java solution
-- java installation problem not solved
+## intent: create_ticket_for_java_solution
+- create ticket for java solution
+- java installation problem not solved so need to create ticket
 - java installation error not solved
 - installation of java error not solved
 - java problem not solved
