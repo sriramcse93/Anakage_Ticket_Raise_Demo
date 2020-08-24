@@ -249,7 +249,7 @@
 
 ## intent: create_ticket_for_outlook_newfile
 - create ticket for outlook newfile
-- not able to create the PST file
+- not able to create the PST file so need to create ticket
 - PST file creation solution not satisfied in outlook.
 - archive file problem not solved so need to create ticket.
 - solution for archive file not resolved
