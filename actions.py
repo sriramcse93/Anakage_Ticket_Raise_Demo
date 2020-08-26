@@ -84,7 +84,7 @@ class ArchiveFile(Action):
                 getid = req.json().get('request')
                 ticketid = getid['id']
                 print("Ticket Created Successfully and ticket No-" + ticketid)
-                dispatcher.utter_message(text="Ticket Created Successfully and ticket No-" + ticketid)
+                dispatcher.utter_message(text="Ticket Created Successfully and ticket number is " + ticketid)
             else:
                 print("Not created")
                 dispatcher.utter_message(text="Please try after some time for ticket creation")
@@ -114,7 +114,7 @@ class RecoverEmail(Action):
                 getid = req.json().get('request')
                 ticketid = getid['id']
                 print("Ticket Created Successfully and ticket No-" + ticketid)
-                dispatcher.utter_message(text="Ticket Created Successfully and ticket No-" + ticketid)
+                dispatcher.utter_message(text="Ticket Created Successfully and ticket number is " + ticketid)
             else:
                 print("Not created")
                 dispatcher.utter_message(text="Please try after some time for ticket creation")
@@ -144,7 +144,7 @@ class PrinterIssue(Action):
                 getid = req.json().get('request')
                 ticketid = getid['id']
                 print("Ticket Created Successfully and ticket No-" + ticketid)
-                dispatcher.utter_message(text="Ticket Created Successfully and ticket No-" + ticketid)
+                dispatcher.utter_message(text="Ticket Created Successfully and ticket number is " + ticketid)
             else:
                 print("Not created")
                 dispatcher.utter_message(text="Please try after some time for ticket creation")
@@ -173,7 +173,7 @@ class CleanUpExplorer(Action):
                 getid = req.json().get('request')
                 ticketid = getid['id']
                 print("Ticket Created Successfully and ticket No-" + ticketid)
-                dispatcher.utter_message(text="Ticket Created Successfully and ticket No-" + ticketid)
+                dispatcher.utter_message(text="Ticket Created Successfully and ticket number is " + ticketid)
             else:
                 print("Not created")
                 dispatcher.utter_message(text="Please try after some time for ticket creation")
@@ -203,7 +203,7 @@ class Popup(Action):
                 getid = req.json().get('request')
                 ticketid = getid['id']
                 print("Ticket Created Successfully and ticket No-" + ticketid)
-                dispatcher.utter_message(text="Ticket Created Successfully and ticket No-" + ticketid)
+                dispatcher.utter_message(text="Ticket Created Successfully and ticket number is " + ticketid)
             else:
                 print("Not created")
                 dispatcher.utter_message(text="Please try after some time for ticket creation")
@@ -233,7 +233,7 @@ class AdobeReader(Action):
                 getid = req.json().get('request')
                 ticketid = getid['id']
                 print("Ticket Created Successfully and ticket No-"+ticketid)
-                dispatcher.utter_message(text="Ticket Created Successfully and ticket No-"+ticketid)
+                dispatcher.utter_message(text="Ticket Created Successfully and ticket number is "+ticketid)
             else:
                 print("Not created")
                 dispatcher.utter_message(text="There was some problem while creating the ticket. Please try after some time..")
@@ -263,7 +263,7 @@ class CleanTemp(Action):
                 getid = req.json().get('request')
                 ticketid = getid['id']
                 print("Ticket Created Successfully and ticket No-" + ticketid)
-                dispatcher.utter_message(text="Ticket Created Successfully and ticket No-" + ticketid)
+                dispatcher.utter_message(text="Ticket Created Successfully and ticket number is " + ticketid)
             else:
                 print("Not created")
                 dispatcher.utter_message(text="Please try after some time for ticket creation")
@@ -293,7 +293,7 @@ class CDriveSpace(Action):
                 getid = req.json().get('request')
                 ticketid = getid['id']
                 print("Ticket Created Successfully and ticket No-" + ticketid)
-                dispatcher.utter_message(text="Ticket Created Successfully and ticket No-" + ticketid)
+                dispatcher.utter_message(text="Ticket Created Successfully and ticket number is " + ticketid)
             else:
                 print("Not created")
                 dispatcher.utter_message(text="Please try after some time for ticket creation")
@@ -323,7 +323,7 @@ class JavaSolution(Action):
                 getid = req.json().get('request')
                 ticketid = getid['id']
                 print("Ticket Created Successfully and ticket No-" + ticketid)
-                dispatcher.utter_message(text="Ticket Created Successfully and ticket No-" + ticketid)
+                dispatcher.utter_message(text="Ticket Created Successfully and ticket number is " + ticketid)
             else:
                 print("Not created")
                 dispatcher.utter_message(text="Please try after some time for ticket creation")
