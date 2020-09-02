@@ -249,6 +249,7 @@
 
 ## intent: create_ticket_for_outlook_newfile
 - create ticket for outlook newfile
+- need to create ticket for outlook newfile
 - not able to create the PST file so need to create ticket
 - PST file creation solution not satisfied in outlook.
 - archive file problem not solved so need to create ticket.
@@ -257,12 +258,14 @@
 
 ## intent: create_ticket_for_outlook_recovery
 - create ticket for outlook recovery
+- need to create ticket for outlook recovery
 - outlook recovery problem not resolved.
 - deleted mail from outlook recovery solution not resolved.
 - mail recovery solution not satisfied so need to create ticket
 
 ## intent: create_ticket_for_printer_queue
 - create ticket for printer queue
+- need to create ticket for printer queue problem not resolved
 - printer queue solution not resolved so need to create ticket
 - printer job stuck to solve the solution not satisfied
 - need to create the ticket for printer queue problem
@@ -274,6 +277,7 @@
 
 ## intent: create_ticket_for_Temp_file_C
 - create ticket for Temp file C
+- need to create ticket for Temp file C
 - temp file delete solution not satisfied so need to create ticket
 - create ticket to solve the C drive free up
 - delete the C drive temp file issue not solved so need to create ticket
@@ -309,6 +313,8 @@
 
 ## intent: create_ticket_for_internet_explorer_PDF
 - create ticket for internet explorer PDF
+- need to create ticket for internet explorer PDF
+- need to create ticket for internet explorer PDF not solved
 - open PDF in browser not solved so need to create ticket
 - solution for internet explorer open PDF in browser not solved
 - open PDF file in internet explorer not solved.
@@ -322,6 +328,7 @@
 
 ## intent: create_ticket_for_internet_explorer_clean
 - create ticket for internet explorer clean
+- need to create ticket for internet explorer clean
 - internet explorer clean up not solved so need to create ticket
 - clean up history in internet explorer not resolved
 - browser history in internet explorer solution not satisfied
@@ -330,6 +337,7 @@
 
 ## intent: create_ticket_for_mobility
 - create ticket for mobility
+- need to create ticket for mobility problem
 - temp file remove problem not resolved so need to create ticket
 - user temp files solution not satisfied so need to create ticket
 - not satisfied for solution to remove user temp file
@@ -342,3 +350,4 @@
 - java installation error not solved
 - installation of java error not solved
 - java problem not solved
+- need to create ticket for java solution
